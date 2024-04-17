@@ -1,5 +1,7 @@
 # renovate-config
 
+[![Validate](https://github.com/database64128/renovate-config/actions/workflows/validate.yml/badge.svg)](https://github.com/database64128/renovate-config/actions/workflows/validate.yml)
+
 [Renovate](https://docs.renovatebot.com/) configuration presets.
 
 ## Usage

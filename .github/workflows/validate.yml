@@ -11,6 +11,7 @@ on:
     paths-ignore:
       - 'README.md'
       - 'LICENSE'
+  workflow_dispatch:
 
 jobs:
   validate:
@@ -24,4 +25,4 @@ jobs:
         run: npm i -g renovate
 
       - name: Validate presets
-        run: find . -name "*.json" -exec renovate-config-validator --strict {} +
+        run: find . -name '*.json' -exec renovate-config-validator --strict '{}' '+'
