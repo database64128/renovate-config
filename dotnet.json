@@ -1,0 +1,23 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "Renovate configuration for .NET projects",
+    "extends": [
+        "github>database64128/renovate-config"
+    ],
+    "packageRules": [
+        {
+            "matchPackageNames": [
+                "System.Interactive.Async",
+                "System.Linq.Async"
+            ],
+            "groupName": "Ix.NET"
+        },
+        {
+            "matchPackagePrefixes": [
+                "ReactiveUI",
+                "ReactiveMarbles"
+            ],
+            "groupName": "ReactiveUI"
+        }
+    ]
+}

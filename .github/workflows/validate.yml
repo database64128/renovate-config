@@ -1,0 +1,27 @@
+name: Validate
+
+on:
+  push:
+    branches:
+      - '**'
+    paths-ignore:
+      - 'README.md'
+      - 'LICENSE'
+  pull_request:
+    paths-ignore:
+      - 'README.md'
+      - 'LICENSE'
+
+jobs:
+  validate:
+    name: Validate
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install Renovate
+        run: npm i -g renovate
+
+      - name: Validate presets
+        run: find . -name "*.json" -exec renovate-config-validator --strict {} +
