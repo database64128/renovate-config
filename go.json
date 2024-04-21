@@ -4,18 +4,6 @@
     "extends": [
         "github>database64128/renovate-config"
     ],
-    "packageRules": [
-        {
-            "description": "Disable minimum Go version updates: https://github.com/renovatebot/renovate/issues/16715",
-            "matchManagers": [
-                "gomod"
-            ],
-            "matchDepTypes": [
-                "golang"
-            ],
-            "enabled": false
-        }
-    ],
     "postUpdateOptions": [
         "gomodTidy",
         "gomodUpdateImportPaths"
