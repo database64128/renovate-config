@@ -6,15 +6,14 @@
     ],
     "packageRules": [
         {
-            "matchPackagePrefixes": [
-                "System.CommandLine"
+            "matchPackageNames": [
+                "/^System.CommandLine/"
             ],
             "groupName": "System.CommandLine"
         },
         {
-            "matchPackagePrefixes": [
-                "ReactiveUI",
-                "ReactiveMarbles"
+            "matchPackageNames": [
+                "/^Reactive(UI|Marbles)/"
             ],
             "groupName": "ReactiveUI"
         }
