@@ -6,13 +6,6 @@
     ],
     "packageRules": [
         {
-            "matchPackageNames": [
-                "System.Interactive.Async",
-                "System.Linq.Async"
-            ],
-            "groupName": "Ix.NET"
-        },
-        {
             "matchPackagePrefixes": [
                 "System.CommandLine"
             ],
